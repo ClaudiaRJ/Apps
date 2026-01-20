@@ -1,4 +1,4 @@
-const APIKEY = "189d0bac63bca0df9edc2b67898647df";
+const APIKEY = "";
 const API_URL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
 const searchBox = document.querySelector("#city");
@@ -116,4 +116,5 @@ searchBox.addEventListener("keypress", (e) => {
 });
 
 // Carga inicial
+
 checkWeather("Barcelona");
