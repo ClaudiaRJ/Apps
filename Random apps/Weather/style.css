@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #070016, #300c86, #72456D);
+    overflow: hidden;
+}
+
+.container {
+    background: linear-gradient(to bottom, #1B064B, #72456D);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 450px;
+    color: white;
+    border-radius: 30px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* BARRA DE BÚSQUEDA */
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 25px;
+    flex: 1;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.search button {
+    border: none;
+    outline: none;
+    background: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search button:hover {
+    background: #ddd;
+}
+
+/* CONTENIDO PRINCIPAL */
+.weather-icon svg {
+    width: 180px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/* DETALLES INFERIORES */
+.details {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col svg {
+    width: 40px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.humidity-text, .wind-text {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.col p:last-child {
+    font-size: 14px;
+    opacity: 0.8;
+}
